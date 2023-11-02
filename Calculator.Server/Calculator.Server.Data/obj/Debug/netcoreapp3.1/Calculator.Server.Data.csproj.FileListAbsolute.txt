@@ -1,0 +1,16 @@
+C:\Users\PC\source\repos\Calculator\Calculator.Server\Calculator.Server.Data\bin\Debug\netcoreapp3.1\Calculator.Server.Data.deps.json
+C:\Users\PC\source\repos\Calculator\Calculator.Server\Calculator.Server.Data\bin\Debug\netcoreapp3.1\Calculator.Server.Data.runtimeconfig.json
+C:\Users\PC\source\repos\Calculator\Calculator.Server\Calculator.Server.Data\bin\Debug\netcoreapp3.1\Calculator.Server.Data.runtimeconfig.dev.json
+C:\Users\PC\source\repos\Calculator\Calculator.Server\Calculator.Server.Data\bin\Debug\netcoreapp3.1\Calculator.Server.Data.dll
+C:\Users\PC\source\repos\Calculator\Calculator.Server\Calculator.Server.Data\bin\Debug\netcoreapp3.1\Calculator.Server.Data.pdb
+C:\Users\PC\source\repos\Calculator\Calculator.Server\Calculator.Server.Data\bin\Debug\netcoreapp3.1\Calculator.Server.Domain.dll
+C:\Users\PC\source\repos\Calculator\Calculator.Server\Calculator.Server.Data\bin\Debug\netcoreapp3.1\Calculator.Server.Domain.pdb
+C:\Users\PC\source\repos\Calculator\Calculator.Server\Calculator.Server.Data\obj\Debug\netcoreapp3.1\Calculator.Server.Data.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\Calculator\Calculator.Server\Calculator.Server.Data\obj\Debug\netcoreapp3.1\Calculator.Server.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\source\repos\Calculator\Calculator.Server\Calculator.Server.Data\obj\Debug\netcoreapp3.1\Calculator.Server.Data.AssemblyInfoInputs.cache
+C:\Users\PC\source\repos\Calculator\Calculator.Server\Calculator.Server.Data\obj\Debug\netcoreapp3.1\Calculator.Server.Data.AssemblyInfo.cs
+C:\Users\PC\source\repos\Calculator\Calculator.Server\Calculator.Server.Data\obj\Debug\netcoreapp3.1\Calculator.Server.Data.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\Calculator\Calculator.Server\Calculator.Server.Data\obj\Debug\netcoreapp3.1\Calculator.Server.Data.csproj.CopyComplete
+C:\Users\PC\source\repos\Calculator\Calculator.Server\Calculator.Server.Data\obj\Debug\netcoreapp3.1\Calculator.Server.Data.dll
+C:\Users\PC\source\repos\Calculator\Calculator.Server\Calculator.Server.Data\obj\Debug\netcoreapp3.1\Calculator.Server.Data.pdb
+C:\Users\PC\source\repos\Calculator\Calculator.Server\Calculator.Server.Data\obj\Debug\netcoreapp3.1\Calculator.Server.Data.genruntimeconfig.cache

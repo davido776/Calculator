@@ -1,0 +1,15 @@
+C:\Users\PC\source\repos\Calculator\Calculator.Server\Calculator.Server.Services\bin\Debug\netcoreapp3.1\Calculator.Server.Services.deps.json
+C:\Users\PC\source\repos\Calculator\Calculator.Server\Calculator.Server.Services\bin\Debug\netcoreapp3.1\Calculator.Server.Services.dll
+C:\Users\PC\source\repos\Calculator\Calculator.Server\Calculator.Server.Services\bin\Debug\netcoreapp3.1\Calculator.Server.Services.pdb
+C:\Users\PC\source\repos\Calculator\Calculator.Server\Calculator.Server.Services\bin\Debug\netcoreapp3.1\Calculator.Server.Data.dll
+C:\Users\PC\source\repos\Calculator\Calculator.Server\Calculator.Server.Services\bin\Debug\netcoreapp3.1\Calculator.Server.Domain.dll
+C:\Users\PC\source\repos\Calculator\Calculator.Server\Calculator.Server.Services\bin\Debug\netcoreapp3.1\Calculator.Server.Data.pdb
+C:\Users\PC\source\repos\Calculator\Calculator.Server\Calculator.Server.Services\bin\Debug\netcoreapp3.1\Calculator.Server.Domain.pdb
+C:\Users\PC\source\repos\Calculator\Calculator.Server\Calculator.Server.Services\obj\Debug\netcoreapp3.1\Calculator.Server.Services.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\Calculator\Calculator.Server\Calculator.Server.Services\obj\Debug\netcoreapp3.1\Calculator.Server.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\source\repos\Calculator\Calculator.Server\Calculator.Server.Services\obj\Debug\netcoreapp3.1\Calculator.Server.Services.AssemblyInfoInputs.cache
+C:\Users\PC\source\repos\Calculator\Calculator.Server\Calculator.Server.Services\obj\Debug\netcoreapp3.1\Calculator.Server.Services.AssemblyInfo.cs
+C:\Users\PC\source\repos\Calculator\Calculator.Server\Calculator.Server.Services\obj\Debug\netcoreapp3.1\Calculator.Server.Services.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\Calculator\Calculator.Server\Calculator.Server.Services\obj\Debug\netcoreapp3.1\Calculator.Server.Services.csproj.CopyComplete
+C:\Users\PC\source\repos\Calculator\Calculator.Server\Calculator.Server.Services\obj\Debug\netcoreapp3.1\Calculator.Server.Services.dll
+C:\Users\PC\source\repos\Calculator\Calculator.Server\Calculator.Server.Services\obj\Debug\netcoreapp3.1\Calculator.Server.Services.pdb
