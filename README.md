@@ -1,10 +1,6 @@
 # Calculator
 The application has a user interface that allows users to input two numbers and select an operation. it also stores the the history of calculations and allow users to view their past calculations.
 
-# Installation
-
-clone the project
-
 # Backend
 
 Update the "DefaultConnection" in appsettings.Development.json to localdb
