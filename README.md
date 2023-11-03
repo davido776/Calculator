@@ -9,16 +9,22 @@ clone the project
 Update the "DefaultConnection" in appsettings.Development.json to localdb
 "Server=.;Database=calculator;Trusted_Connection=True;MultipleActiveResultSets=true"
 
-cd Calculator.client
-dotnet restore
-dotnet run
-
+1. cd Calculator.client
+2. dotnet restore
+3. dotnet run
+   
 if you are opening with visual studio, just build and run the project.
 
+add /swagger to the launchUrl to open swagger documentation
+
 # Frontend
-cd Calculator.client
-npm install
-npm start
+
+1. cd Calculator.client
+2. npm install
+3. npm start
+
+
+
 
 
 
