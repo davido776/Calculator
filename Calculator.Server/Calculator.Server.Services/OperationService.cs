@@ -41,5 +41,18 @@ namespace Calculator.Server.Services
             return Result<List<Operation>>.Success(await context.Operations.ToListAsync());
         }
 
+        public async Task<Result<string>> DeleteOperations()
+        {
+            var operations = await context.Operations.ToListAsync();
+
+            context.RemoveRange(operations);
+            if (await context.SaveChangesAsync() > 0)
+            {
+                return Result<string>.Success("history cleared");
+            }
+
+            return Result<string>.Failure("failed to clear history");
+        }
+
     }
 }

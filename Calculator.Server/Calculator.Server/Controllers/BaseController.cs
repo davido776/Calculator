@@ -1,11 +1,10 @@
 ﻿using Calculator.Server.Services;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace Calculator.Server.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/v1/[controller]")]
     public class BaseController : ControllerBase
     {
         protected ActionResult HandleResult<T>(Result<T> result)

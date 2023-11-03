@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import './App.css';
 import Button from './components/Button/Button'
 import ButtonBox from './components/Button/ButtonBox'
 import Container from './components/Container/Container'
 import Home from './components/Page/Home'
-
+import {deleteData, getData, postData} from './services/ApiService'
+import {toLocaleString, removeSpaces} from './helpers/stringhelpers'
 
 const btnValues = [
   ["C", "/"],
@@ -14,37 +15,37 @@ const btnValues = [
   [0, ".", "="],
 ];
 
-const toLocaleString = (num) =>
-  String(num).replace(/(?<!\..*)(\d)(?=(?:\d{3})+(?:\.|$))/g, "$1 ");
-
-const removeSpaces = (num) => num.toString().replace(/\s/g, "");
-
-const history = [
-  {
-  expression: "3x2",
-  result : 6
-  },
-  {
-  expression: "3x3",
-  result : 9
-  },
-  {
-    expression: "3x4",
-    result : 12
-  },
-];
-
-const extractNumberOperands = (expression) => {
-   
-}
-
 const App = () => {
   const [expression, setExpression] = useState("");
+  const [history, setHistory] = useState([])
+
   let [calc, setCalc] = useState({
     sign: "",
     num: 0,
     res: 0,
   });
+
+  useEffect(() =>{
+    getOperations();
+  }, [])
+
+
+  const clearOperations = async () => {
+     setHistory([]);
+     deleteData();
+  }
+
+  const getOperations = async () => {
+      const res = await getData();
+      setHistory([...res]);
+  }
+
+
+  const addOperation = async (expression, result) => {
+    setHistory([{expression, result}, ...history])
+    postData({expression, result}) 
+  };
+
 
   const numClickHandler = (e) => {
     e.preventDefault();
@@ -84,6 +85,7 @@ const App = () => {
       res: !calc.res && calc.num ? calc.num : calc.res,
       num: 0,
     });
+   
   };
 
   const equalsClickHandler = () => {
@@ -113,7 +115,7 @@ const App = () => {
         sign: "",
         num: 0,
       });
-
+      addOperation(expression, Number(finalres))
     }
   };
 
@@ -180,14 +182,16 @@ const App = () => {
           })}
         </ButtonBox>
       </Container>
-      <Container>
-        {history.map((x, i) => {
-          return <Home value={x.expression} result={x.result} />
-        })}
-      </Container>   
+      <div> 
+        <Container>
+        <Button className="clear" onClick={clearOperations} value="clear">clear</Button>
+          {history.map((x, i) => {
+            return <Home styles={["history"]} key={x.id} value={`${x.expression}=${x.result}`} />
+          })}
+        </Container>
+      </div>   
     </div>
   );
 };
-
 
 export default App;

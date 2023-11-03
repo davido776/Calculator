@@ -12,3 +12,9 @@
     font-weight: bold;
     box-sizing: border-box;
   }
+
+.history{
+    color : green;
+    font-weight: normal !important;
+    font-size: 30px !important;
+}

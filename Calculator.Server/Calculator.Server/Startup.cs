@@ -32,9 +32,22 @@ namespace Calculator.Server
 
             services.AddControllers();
 
+            services.AddCors(opt =>
+            {
+                opt.AddPolicy("CorsPolicy", policy =>
+                {
+                    policy
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowCredentials()
+                    .WithExposedHeaders("WWW-Authenticate", "Pagination")
+                    .WithOrigins("http://localhost:3000");
+                });
+            });
+
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Actvt.API", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Calculator.Server", Version = "v1" });
             });
         }
 
@@ -49,12 +62,14 @@ namespace Calculator.Server
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Your API V1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", " Calculator.Server V1");
             });
 
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors("CorsPolicy");
 
             app.UseAuthorization();
 

@@ -25,5 +25,11 @@ namespace Calculator.Server.Controllers
         {
             return HandleResult(await operationService.GetOperations());
         }
+
+        [HttpDelete]
+        public async Task<IActionResult> DeleteOperations()
+        {
+            return HandleResult(await operationService.DeleteOperations());
+        }
     }
 }

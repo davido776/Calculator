@@ -10,5 +10,7 @@ namespace Calculator.Server.Services.Interface
         Task<Result<string>> AddOperation(OperationRequestModel operationModel);
 
         Task<Result<List<Operation>>> GetOperations();
+
+        Task<Result<string>> DeleteOperations();
     }
 }
